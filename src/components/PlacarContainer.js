@@ -57,6 +57,7 @@ export default class PlacarContainer extends React.Component {
 PlacarContainer.protoTypes = {
     clima: React.PropTypes.string,
     tempo: React.PropTypes.number.isRequired,
+    
 };
 
 PlacarContainer.defaultProps = {
