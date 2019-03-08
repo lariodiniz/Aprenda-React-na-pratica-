@@ -3,7 +3,7 @@ import PlacarContainer from './PlacarContainer'
 
 const dados = {
     partida: {
-        estadio: "maracanã/R3",
+        estadio: "maracanã / R3",
         data: "01/06/2016",
         horario: "19h",
     },
@@ -16,11 +16,7 @@ const dados = {
 };
 export default class App extends React.Component {
     render(){
-        return <PlacarContainer 
-                    partida={dados.partida}
-                    casa={dados.casa}
-                    visitante={dados.visitante}
-                />
+        return <PlacarContainer {...dados} />
             
         ;
     }
